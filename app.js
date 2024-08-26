@@ -1,4 +1,2 @@
-console.log(`Project 10`)
-/*
-We'll create a social media selector menu that displays social media text and icons. As we click on the menu, we'll see a list of social media, and each will have a hovering effect. When we click on an icon, such as Facebook or YouTube, the social media text will change accordingly. The icons will also rotate as we open or close the menu. Finally, clicking on any icon will make the menu disappear. We'll learn how to toggle classes and change the appearance of the website using these methods. This project is ideal for those who want to enhance their CSS and JavaScript skills while creating an attractive social media menu.
-*/
+//DOM
+ 
