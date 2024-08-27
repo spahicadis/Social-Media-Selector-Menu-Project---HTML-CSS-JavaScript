@@ -1,2 +1,8 @@
 //DOM
  
+
+
+//STATES
+
+
+//BINDING
