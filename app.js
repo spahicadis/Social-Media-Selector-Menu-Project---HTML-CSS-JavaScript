@@ -5,12 +5,8 @@ const socialMedia = document.querySelectorAll('.js-menuItem')
 const activeMedia = document.querySelector('.displayActiveMedia')
  
 
+let active;
 
-//STATES
-
-
-
-//BINDING
 
 function arrowStatus() {
   let up = arrow.classList.contains('arrowDomUp');
@@ -31,20 +27,33 @@ function arrowStatus() {
 arrow.addEventListener('click', () => {
   
 arrowStatus()
-  
 
-  
+
 });
 
-socialMedia.forEach((media) => {
-  media.addEventListener('mouseover', () => {
-    media.classList.add('mediaHover')
+
+socialMedia.forEach((media, index
+) => {
+  media.addEventListener('mouseenter', (e) => {
+      media.classList.add('mediaHover');
+
+    
+  })
+})
+
+socialMedia.forEach((media, index
+) => {
+  media.addEventListener('mouseleave', (e) => {
+      media.classList.remove('mediaHover');
+
+    
   })
 })
 
 socialMedia.forEach((media) => {
   media.addEventListener('click', () => {
     activeMedia.innerHTML = media.innerHTML
+    arrowStatus()
     
   })
 })
